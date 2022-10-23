@@ -9,4 +9,10 @@
     <string name="log_in_with_phone_number">Log In With Phone Number</string>
     <string name="log_in_with_google">Log In With Google</string>
     <string name="log_in_with_facebook">Log In With Facebook</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_number_is">My number is</string>
+    <string name="country">Country</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="login_continue">Continue</string>
 </resources>

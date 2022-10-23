@@ -1,18 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/lightBlueOnLogo"
+    android:padding="16dp"
     tools:context=".activities.MainActivity">
 
-    <TextView
+
+    <ImageView
+        android:id="@+id/img_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:src="@drawable/date_app_home_img" />
+
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignBaseline="@id/img_main_activity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/btnColorRedDark"
+        android:textSize="35sp"
+        android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_login_facebook"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_google"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/log_in_with_google"
+        android:textColor="@color/redOnLogo"
+        android:textSize="14sp"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_login_phone"
+        android:layout_marginBottom="3dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_facebook"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/log_in_with_facebook"
+        android:textColor="@color/redOnLogo"
+        android:textSize="14sp"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_trouble_login"
+        android:layout_marginBottom="80dp"
+        android:backgroundTint="@color/white"
+        android:drawableLeft="@drawable/ic_phone_login"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/log_in_with_phone_number"
+        android:textColor="@color/redOnLogo"
+        android:textSize="14sp"
+        app:cornerRadius="15dp" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_trouble_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:gravity="center"
+        android:text="@string/trouble_logging_in"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
