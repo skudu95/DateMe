@@ -23,4 +23,7 @@
     <string name="send_email">Send Email</string>
     <string name="username">Username</string>
     <string name="card_user_image">Card User Image</string>
+    <string name="notification_item_text">Someone liked your profile</string>
+    <string name="notification_time_text">2h ago</string>
+    <string name="notification_user_image">Notification User Image</string>
 </resources>

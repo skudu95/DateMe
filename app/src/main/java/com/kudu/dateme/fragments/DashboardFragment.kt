@@ -90,6 +90,16 @@ class DashboardFragment : Fragment() {
 
         })
 
+
+        binding.btnLike.setOnClickListener {
+            Toast.makeText(requireContext(), "Like clicked", Toast.LENGTH_SHORT).show()
+            flingContainer.topCardListener.selectRight()
+        }
+        binding.btnDislike.setOnClickListener {
+            Toast.makeText(requireContext(), "Dislike clicked", Toast.LENGTH_SHORT).show()
+            flingContainer.topCardListener.selectLeft()
+        }
+
         return view
     }
 
