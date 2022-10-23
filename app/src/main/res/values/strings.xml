@@ -15,4 +15,12 @@
     <string name="country">Country</string>
     <string name="phone_number">Phone Number</string>
     <string name="login_continue">Continue</string>
+    <string name="account_recovery_subtitle">Changed your Phone Number, or lost access to your Facebook Account? We can help you login with your email.</string>
+    <string name="login_with_email">Login with email</string>
+    <string name="login_by_email">Login by email</string>
+    <string name="your_email_is">Your email is</string>
+    <string name="email_login_link">We\'ll email you a link that will instantly log you in.</string>
+    <string name="send_email">Send Email</string>
+    <string name="username">Username</string>
+    <string name="card_user_image">Card User Image</string>
 </resources>

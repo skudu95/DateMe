@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.tvTroubleLogin.setOnClickListener {
-            startActivity(Intent(this@MainActivity, DashboardActivity::class.java))
+            startActivity(Intent(this@MainActivity, AccountRecoveryActivity::class.java))
         }
     }
 }
